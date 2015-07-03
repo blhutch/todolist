@@ -1,0 +1,8 @@
+<h1>Edit <%= @item.description %></h1>
+
+<%= render 'form' %>
+<p><%= link_to 'Delete this item',
+                @item,
+                :method => :delete,
+                :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary btn-xs' %></p>
+                

@@ -1,0 +1,11 @@
+<h1><%= @item.description %></h1>
+
+<p> Duedate: <%= @item.duedate %></p>
+<p> Completed: <%= @item.completed %></p>
+
+<button class="btn btn-default btn-xs" style="float:left"><%= link_to 'Edit this item', edit_item_path(@item) %> </button>
+<button class="btn btn-default btn-xs" style="float:left"><%= link_to 'Delete this item',
+                @item,
+                :method => :delete,
+                :data => { :confirm => 'Are you sure?' } %></button>
+<button class="btn btn-default btn-xs" style="float:right"><%= link_to 'Return to list menu', @item.list %> </button>
